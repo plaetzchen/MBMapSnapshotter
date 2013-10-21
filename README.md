@@ -17,9 +17,9 @@ Usage
 #import "MBMapSnapshotter.h"
 
 - (void)takeSnapshot {
-  CLLocationCoordinate2D coordnate = CLLocationCoordnate2DMake(52.516667, 13.383333) //Berlin
+  CLLocationCoordinate2D coordnate = CLLocationCoordnate2DMake(52.516667, 13.383333); //Berlin
   MBMapSnapshotter *mapSnapShotter = [[MBMapSnapshotter alloc]init];
-  [mapSnapShotter setMapName:@"mapbox.world-bright"];
+  [mapSnapShotter setMapName:@"examples.map-9ijuk24y"];
   [mapSnapShotter getSnapshotWithCenter:coordinate size:CGSizeMake(480, 320) zoomLevel:14 finishingBlock:^(MBSnapshot *snapshot, NSError *error) {
     if (error){
       NSLog(@"Error %@", error);
